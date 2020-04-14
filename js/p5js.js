@@ -1,15 +1,14 @@
 let englishFont;
-let hebrewFont;
+let russianFont;
 
 function preload() {
   englishFont = loadFont('assets/Girassol-Regular.ttf');
-	hebrewFont = loadFont('assets/Tinos-Bold.ttf');
+	russianFont = loadFont('assets/kremlin.ttf');
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   textSize(50);
-  //textAlign(CENTER, CENTER);
 }
 
 function draw() {
@@ -19,9 +18,9 @@ function draw() {
   rotateZ(time / 1234);
   textFont(englishFont);
   text('A', -10, 10);
-	textFont(englishFont);
+	textFont(russianFont);
 	 rotateZ(time / 1000);
-  text('א', -30, 70);
+  text('д', -30, 70);
 }
 
 function windowResized() {
