@@ -17,6 +17,8 @@ function draw() {
   rotateZ(time / 1234);
   textFont(englishFont);
   text('A', -10, 10);
+	 rotateZ(time * 1234);
+  text('א', -30, 70);
 }
 
 function windowResized() {
