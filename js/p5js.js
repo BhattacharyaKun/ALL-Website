@@ -8,7 +8,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   textFont(englishFont);
   textSize(width / 3);
-  textAlign(random(width), random(height));
+  textAlign(CENTER);
 }
 
 function draw() {
