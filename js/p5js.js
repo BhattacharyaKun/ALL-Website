@@ -1,13 +1,16 @@
-let inconsolata;
+let englishFont;
+
 function preload() {
-  inconsolata = loadFont('assets/Girassol-Regular.ttf');
+  englishFont = loadFont('assets/Girassol-Regular.ttf');
 }
+
 function setup() {
-  createCanvas(100, 100, WEBGL);
-  textFont(inconsolata);
+  createCanvas(windowWidth, windowHeight, WEBGL);
+  textFont(englishFont);
   textSize(width / 3);
-  textAlign(CENTER, CENTER);
+  textAlign(random(width), random(height));
 }
+
 function draw() {
   background(0);
   let time = millis();
