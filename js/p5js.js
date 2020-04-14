@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
   textSize(50);
-  textAlign(CENTER, CENTER);
+  //textAlign(CENTER, CENTER);
 }
 
 function draw() {
@@ -17,7 +17,7 @@ function draw() {
   rotateZ(time / 1234);
   textFont(englishFont);
   text('A', -10, 10);
-	 rotateZ(time * 1234);
+	 rotateZ(time / 1000);
   text('א', -30, 70);
 }
 
