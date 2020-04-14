@@ -18,9 +18,9 @@ function draw() {
   rotateZ(time / 1234);
   textFont(englishFont);
   text('A', -10, 10);
-	textFont(russianFont);
+	//textFont(russianFont);
 	 rotateZ(time / 1000);
-  text('д', -30, 70);
+  text('C', -30, 70);
 }
 
 function windowResized() {
