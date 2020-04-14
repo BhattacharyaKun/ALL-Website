@@ -6,12 +6,13 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  textSize(20);
+  textSize(50);
   textAlign(CENTER, CENTER);
 }
 
 function draw() {
   background(0);
+	translate(-width, -height);
   let time = millis();
   rotateZ(time / 1234);
   textFont(englishFont);
