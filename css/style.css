@@ -1,0 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+#sketchHolder
+{
+}
+
+#blurDiv
+{
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
