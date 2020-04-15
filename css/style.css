@@ -1,16 +1,11 @@
 html, body {
-  margin: 0;
-  padding: 0;
-}
-canvas {
-  display: block;
-}
-
-#sketchHolder
-{
+  background-image: url("../assets/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
-#blurDiv
+#ALL
 {
   color: white;
   font-weight: bold;
