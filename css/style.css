@@ -2,6 +2,7 @@
 header {
 	text-align: center;
 }
+
 h4.Profession {
 	font-size: 24px;
 	text-align: center;
@@ -29,7 +30,7 @@ a:link, a:visited, a:active {
 	text-decoration: none;
 	font-family: "Raleway";
 }
-div {
+div.slider-names {
 	padding: 8px 16px;
 	width: auto;
 	padding-left: 0px;
@@ -57,16 +58,7 @@ div.slide::after {
 .slide.active {
 	display: block;
 }
-img, video {
-	margin-bottom: 200px;
-	box-shadow: 0px 0px 15px 5px #888888;
-}
-video {
-	text-align: center;
-}
-#Videos {
-	text-align: center;
-}
+
 nav.arrows {
 	border: none;
 	font-size: 25px;
@@ -78,19 +70,75 @@ nav.arrows {
 	display: inline;
 	cursor: pointer;
 }
-p.cv {
-	text-align: center;
-	font-size: 18px;
+h1 {
+	font-size: 40px;
 }
-p.title {
-	font-size: 26px;
+h2 {
+	font-size: 30px;
 }
-p.text {
-	font-size: 20px;
+div.reveal {
+	
+	width: 100%;
+	height: 100%;
+	transform: scale(0.9);
+	transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
+	position: relative;
 }
 
-div.text {
-	margin-left: 15%;
-	margin-right: 15%;
-	border: none;
+div.reveal::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+div.reveal img {
+	box-shadow: 0px 0px 15px 5px #888888;
+	position: relative;
+	display: block;
+  	margin-left: auto;
+ 	margin-right: auto;
+  	width: 40%;
+}
+
+div.reveal:hover {
+	transform: scale(1);
+}
+
+div.reveal:hover::before {
+	transform: translateY(12px);
+	opacity: 0.2;
+}
+
+div.reveal_text-bg {
+	background: #333;
+	font-family: "Raleway";
+	position: absolute;
+	top: calc(50% - 150px);
+	height: 300px;
+	width: 100%;
+	font-size: 36px;
+	color: white;
+	z-index: 1;
+	display: flex;
+	left: 50%;
+	transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
+	transform: translateX(-150%) skew(-30deg);
+	overflow: hidden;
+}
+
+div.reveal_text 
+{
+	width: 100%;
+	text-align: center;
+	transition: transform 0.4s cubic-bezier(0, 0, 0.3, 1);
+	transform: translateX(100%) skew(30deg);
+}
+
+div.reveal:hover div.reveal_text-bg {
+	transform: translateX(-50%) skew(-30deg);
+}
+
+div.reveal:hover div.reveal_text {
+	transform: skew(30deg);
 }
